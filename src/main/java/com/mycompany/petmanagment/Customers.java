@@ -159,6 +159,11 @@ public class Customers extends javax.swing.JFrame {
         editbtn.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
         editbtn.setForeground(new java.awt.Color(255, 255, 255));
         editbtn.setText("Edit");
+        editbtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                editbtnMouseClicked(evt);
+            }
+        });
         editbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 editbtnActionPerformed(evt);
@@ -192,7 +197,6 @@ public class Customers extends javax.swing.JFrame {
             }
         ));
         customertbl.setRowHeight(30);
-        customertbl.setRowMargin(0);
         customertbl.setSelectionBackground(new java.awt.Color(0, 51, 102));
         customertbl.setSelectionForeground(new java.awt.Color(255, 255, 255));
         customertbl.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -521,6 +525,10 @@ public class Customers extends javax.swing.JFrame {
             }
         }
     }//GEN-LAST:event_delbtnMouseClicked
+
+    private void editbtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_editbtnMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_editbtnMouseClicked
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */

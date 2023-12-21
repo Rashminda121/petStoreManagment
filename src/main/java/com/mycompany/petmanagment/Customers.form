@@ -338,6 +338,7 @@
                 <Property name="text" type="java.lang.String" value="Edit"/>
               </Properties>
               <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="editbtnMouseClicked"/>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="editbtnActionPerformed"/>
               </Events>
             </Component>
@@ -410,7 +411,6 @@
                       </TableColumnModel>
                     </Property>
                     <Property name="rowHeight" type="int" value="30"/>
-                    <Property name="rowMargin" type="int" value="0"/>
                     <Property name="selectionBackground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="66" green="33" red="0" type="rgb"/>
                     </Property>
