@@ -1,0 +1,49 @@
+user table
+
+CREATE TABLE `petshopdb`.`user` (
+  `uid` INT NOT NULL AUTO_INCREMENT,
+  `uname` VARCHAR(45) NULL,
+  `upass` VARCHAR(45) NULL,
+  `username` VARCHAR(45) NULL,
+  PRIMARY KEY (`uid`));
+
+customer
+
+CREATE TABLE `petshopdb`.`customer` (
+  `cusid` INT NOT NULL AUTO_INCREMENT,
+  `cusname` VARCHAR(45) NULL,
+  `cusadd` VARCHAR(45) NULL,
+  `cusphone` VARCHAR(45) NULL,
+  PRIMARY KEY (`cusid`));
+
+category
+
+CREATE TABLE `petshopdb`.`category` (
+  `catid` INT NOT NULL AUTO_INCREMENT,
+  `catdes` VARCHAR(45) NULL,
+  `catcode` VARCHAR(45) NULL,
+  PRIMARY KEY (`catid`));
+
+pettbl
+
+CREATE TABLE `petshopdb`.`pettbl` (
+  `pid` INT primary key AUTO_INCREMENT,
+  `pname` VARCHAR(45) NULL,
+  `pcat` int,
+  foreign key(pcat) references `category`(`catid`),
+  `pquan`  int,
+  `price` int
+  );
+
+bill 
+
+CREATE TABLE `petshopdb`.`bill` (
+  `bnum` INT primary key AUTO_INCREMENT,
+  `bdate` VARCHAR(45) NULL,
+  `custid` int,
+  `uid`  int,
+  `amount` int,
+  foreign key(`custid`) references `customer`(`cusid`),
+  foreign key(`uid`) references `user`(`uid`)
+  );
+  
