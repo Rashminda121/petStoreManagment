@@ -149,6 +149,11 @@ public class Customers extends javax.swing.JFrame {
         savebtn.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
         savebtn.setForeground(new java.awt.Color(255, 255, 255));
         savebtn.setText("Save");
+        savebtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                savebtnMouseClicked(evt);
+            }
+        });
         savebtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 savebtnActionPerformed(evt);
@@ -529,6 +534,10 @@ public class Customers extends javax.swing.JFrame {
     private void editbtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_editbtnMouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_editbtnMouseClicked
+
+    private void savebtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_savebtnMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_savebtnMouseClicked
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
