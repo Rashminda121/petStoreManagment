@@ -45,19 +45,20 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                          <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="Category" max="32767" attributes="0"/>
                               <Component id="jLabel5" max="32767" attributes="0"/>
                               <Component id="jLabel3" alignment="0" max="32767" attributes="0"/>
                               <Component id="jLabel6" alignment="0" max="32767" attributes="0"/>
                               <Component id="jLabel4" alignment="0" max="32767" attributes="0"/>
                               <Component id="jLabel2" alignment="1" max="32767" attributes="0"/>
                           </Group>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                          <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -85,6 +86,8 @@
                           <Component id="jLabel5" min="-2" pref="37" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="jLabel6" min="-2" pref="33" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="Category" min="-2" pref="32" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
                           <Component id="jLabel4" min="-2" pref="33" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
@@ -510,7 +513,7 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Rashminda\Documents\NetBeansProjects\petmanagment\src\main\java\com\mycompany\petmanagment\cat.png"/>
+              <Image iconType="2" name="C:\Users\Rashminda\Documents\NetBeansProjects\petmanagment\src\main\java\com\mycompany\petmanagment\user.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value=" Users"/>
           </Properties>
@@ -532,7 +535,7 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Rashminda\Documents\NetBeansProjects\petmanagment\src\main\java\com\mycompany\petmanagment\cat.png"/>
+              <Image iconType="2" name="C:\Users\Rashminda\Documents\NetBeansProjects\petmanagment\src\main\java\com\mycompany\petmanagment\logout .png"/>
             </Property>
             <Property name="text" type="java.lang.String" value=" Logout"/>
           </Properties>
@@ -552,7 +555,7 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Rashminda\Documents\NetBeansProjects\petmanagment\src\main\java\com\mycompany\petmanagment\cat.png"/>
+              <Image iconType="2" name="C:\Users\Rashminda\Documents\NetBeansProjects\petmanagment\src\main\java\com\mycompany\petmanagment\customer.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value=" Customers"/>
           </Properties>
@@ -574,7 +577,7 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Rashminda\Documents\NetBeansProjects\petmanagment\src\main\java\com\mycompany\petmanagment\cat.png"/>
+              <Image iconType="2" name="C:\Users\Rashminda\Documents\NetBeansProjects\petmanagment\src\main\java\com\mycompany\petmanagment\invoice.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value=" Billing"/>
           </Properties>
@@ -599,6 +602,28 @@
               <Image iconType="2" name="C:\Users\Rashminda\Documents\NetBeansProjects\petmanagment\src\main\java\com\mycompany\petmanagment\animals.png"/>
             </Property>
           </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="Category">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="66" green="33" red="0" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Century Gothic" size="18" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="2" name="C:\Users\Rashminda\Documents\NetBeansProjects\petmanagment\src\main\java\com\mycompany\petmanagment\category.png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value=" Category"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="CategoryMouseClicked"/>
+            <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="CategoryMouseEntered"/>
+            <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="CategoryMouseExited"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>

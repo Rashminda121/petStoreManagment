@@ -206,6 +206,7 @@ public class Billing extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
+        Category = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -293,7 +294,6 @@ public class Billing extends javax.swing.JFrame {
             }
         ));
         proTbl.setRowHeight(30);
-        proTbl.setRowMargin(2);
         proTbl.setSelectionBackground(new java.awt.Color(0, 51, 102));
         proTbl.setSelectionForeground(new java.awt.Color(255, 255, 255));
         proTbl.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -460,7 +460,7 @@ public class Billing extends javax.swing.JFrame {
                                 .addGap(0, 0, Short.MAX_VALUE)
                                 .addComponent(delbtn))
                             .addGroup(jPanel6Layout.createSequentialGroup()
-                                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 272, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 287, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addGroup(jPanel6Layout.createSequentialGroup()
@@ -620,6 +620,23 @@ public class Billing extends javax.swing.JFrame {
         jLabel24.setForeground(new java.awt.Color(255, 255, 255));
         jLabel24.setIcon(new javax.swing.ImageIcon("C:\\Users\\Rashminda\\Documents\\NetBeansProjects\\petmanagment\\src\\main\\java\\com\\mycompany\\petmanagment\\animals.png")); // NOI18N
 
+        Category.setBackground(new java.awt.Color(0, 51, 102));
+        Category.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        Category.setForeground(new java.awt.Color(255, 255, 255));
+        Category.setIcon(new javax.swing.ImageIcon("C:\\Users\\Rashminda\\Documents\\NetBeansProjects\\petmanagment\\src\\main\\java\\com\\mycompany\\petmanagment\\category.png")); // NOI18N
+        Category.setText(" Category");
+        Category.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CategoryMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                CategoryMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                CategoryMouseExited(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
@@ -636,7 +653,8 @@ public class Billing extends javax.swing.JFrame {
                             .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE)
                             .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Category, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(18, 18, 18)))
                 .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
@@ -659,6 +677,8 @@ public class Billing extends javax.swing.JFrame {
                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(Category, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(115, 115, 115))))
@@ -740,12 +760,10 @@ public class Billing extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "Bill Saved Successfully.");
                 
                 
-                updateQuantity();
                 SelectionClear();
                 display();
                 clearText2();
                 setCurrentDate();
-               
                 
                 
                 conn.close();
@@ -806,13 +824,17 @@ public class Billing extends javax.swing.JFrame {
            n++;
            row++;
            
+           updateQuantity();
        }
        clearText();
        
     }//GEN-LAST:event_addbtnActionPerformed
+    
+    
     private void updateQuantity(){
         try {
-                int newQty= stock-Integer.valueOf(qua.getText().toString());
+                int val=Integer.valueOf(qua.getText());
+                int newQty= stock-val;
                 
                 conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/petshopdb","root","1234");
                 
@@ -831,7 +853,10 @@ public class Billing extends javax.swing.JFrame {
                 display();
                 clearText();
                 
+                val=0;
+                
                 conn.close();
+                
                 
             } catch (SQLException ex) {
                 ex.printStackTrace();
@@ -938,6 +963,23 @@ public class Billing extends javax.swing.JFrame {
         jLabel5.repaint();
     }//GEN-LAST:event_jLabel5MouseExited
 
+    private void CategoryMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CategoryMouseClicked
+        new Category().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_CategoryMouseClicked
+
+    private void CategoryMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CategoryMouseEntered
+        Category.setBackground(new java.awt.Color(102, 0, 51));
+        Category.setOpaque(true);
+        Category.repaint();
+    }//GEN-LAST:event_CategoryMouseEntered
+
+    private void CategoryMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CategoryMouseExited
+         Category.setBackground(new java.awt.Color(0, 51, 102));
+        Category.setOpaque(true);
+        Category.repaint();
+    }//GEN-LAST:event_CategoryMouseExited
+
     
        
     
@@ -977,6 +1019,7 @@ public class Billing extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Category;
     private javax.swing.JButton addbtn;
     private javax.swing.JTable billtbl;
     private javax.swing.JComboBox<String> customercb;
