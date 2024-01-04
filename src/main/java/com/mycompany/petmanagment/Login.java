@@ -29,7 +29,7 @@ public class Login extends javax.swing.JFrame {
     Connection conn=null;
     PreparedStatement ps=null;
     ResultSet rs=null;
-   
+    Statement st=null;
     
     
     @SuppressWarnings("unchecked")
