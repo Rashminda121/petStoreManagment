@@ -1,4 +1,4 @@
-user table
+User table
 
 CREATE TABLE `petshopdb`.`user` (
   `uid` INT NOT NULL AUTO_INCREMENT,
