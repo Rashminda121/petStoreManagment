@@ -10,9 +10,6 @@ package com.mycompany.petmanagment;
  */
 public class Splash extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Splash
-     */
     public Splash() {
         initComponents();
     }
