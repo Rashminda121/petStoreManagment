@@ -12,10 +12,7 @@ import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
-/**
- *
- * @author Rashminda
- */
+
 public class Category extends javax.swing.JFrame {
 
     /**
