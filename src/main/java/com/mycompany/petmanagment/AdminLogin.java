@@ -259,7 +259,7 @@ public class AdminLogin extends javax.swing.JFrame {
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    
     private javax.swing.JButton Close;
     private javax.swing.JButton clear;
     private javax.swing.JLabel jLabel1;
