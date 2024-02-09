@@ -206,7 +206,7 @@ public class AdminLogin extends javax.swing.JFrame {
 
     private void CloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CloseActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_CloseActionPerformed
+    }
 
     private void loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginActionPerformed
             if(password.getText().isEmpty()){
