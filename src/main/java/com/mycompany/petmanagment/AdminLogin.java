@@ -9,8 +9,7 @@ import java.sql.Statement;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
- * @author Rashminda
- */
+
 public class AdminLogin extends javax.swing.JFrame {
 
     /**
