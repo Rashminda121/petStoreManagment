@@ -202,7 +202,7 @@ public class AdminLogin extends javax.swing.JFrame {
 
     private void CloseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CloseMouseClicked
         System.exit(0);
-    }//GEN-LAST:event_CloseMouseClicked
+    }//GEN-LAST
 
     private void CloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CloseActionPerformed
         // TODO add your handling code here:
