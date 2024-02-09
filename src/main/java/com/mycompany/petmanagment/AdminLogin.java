@@ -221,7 +221,7 @@ public class AdminLogin extends javax.swing.JFrame {
                     JOptionPane.showMessageDialog(this, "Enter Correct Password.");
                 }
         }
-    }//GEN-LAST:event_loginActionPerformed
+    }
 
     private void jLabel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseClicked
         new Login().setVisible(true);
