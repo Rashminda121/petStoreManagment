@@ -94,7 +94,7 @@ public class AdminLogin extends javax.swing.JFrame {
         });
 
         clear.setBackground(new java.awt.Color(0, 51, 102));
-        clear.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        clear.setFont(new java.awt.Font("Century Gothic", 0, 15));
         clear.setForeground(new java.awt.Color(255, 255, 255));
         clear.setText("Clear");
 
