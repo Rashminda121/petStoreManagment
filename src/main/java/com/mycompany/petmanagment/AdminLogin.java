@@ -99,7 +99,7 @@ public class AdminLogin extends javax.swing.JFrame {
         clear.setText("Clear");
 
         Close.setBackground(new java.awt.Color(0, 51, 102));
-        Close.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
+        Close.setFont(new java.awt.Font("Century Gothic", 0, 18)); 
         Close.setForeground(new java.awt.Color(255, 255, 255));
         Close.setText("X");
         Close.addMouseListener(new java.awt.event.MouseAdapter() {
