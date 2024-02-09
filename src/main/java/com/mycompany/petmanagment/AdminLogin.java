@@ -80,7 +80,7 @@ public class AdminLogin extends javax.swing.JFrame {
         jLabel5.setText("Password :");
 
         password.setBackground(new java.awt.Color(255, 255, 255));
-        password.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
+        password.setFont(new java.awt.Font("Century Gothic", 0, 16)); 
         password.setForeground(new java.awt.Color(0, 51, 102));
 
         login.setBackground(new java.awt.Color(0, 51, 102));
