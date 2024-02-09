@@ -12,9 +12,6 @@ import javax.swing.table.DefaultTableModel;
 
 public class AdminLogin extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Login
-     */
     public AdminLogin() {
         initComponents();
     }
