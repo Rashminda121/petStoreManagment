@@ -228,9 +228,7 @@ public class AdminLogin extends javax.swing.JFrame {
            this.dispose();
     }//GEN-LAST:event_jLabel10MouseClicked
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
