@@ -392,7 +392,7 @@ public class Billing extends javax.swing.JFrame {
         });
 
         resetbtn1.setBackground(new java.awt.Color(0, 51, 102));
-        resetbtn1.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        resetbtn1.setFont(new java.awt.Font("Century Gothic", 0, 15)); 
         resetbtn1.setForeground(new java.awt.Color(255, 255, 255));
         resetbtn1.setText("Reset");
         resetbtn1.addActionListener(new java.awt.event.ActionListener() {
