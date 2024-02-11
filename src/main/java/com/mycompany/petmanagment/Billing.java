@@ -321,7 +321,7 @@ public class Billing extends javax.swing.JFrame {
         date.setAlignmentX(0.7F);
 
         jLabel26.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel26.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        jLabel26.setFont(new java.awt.Font("Century Gothic", 1, 16)); 
         jLabel26.setForeground(new java.awt.Color(0, 51, 102));
         jLabel26.setText("Price");
 
