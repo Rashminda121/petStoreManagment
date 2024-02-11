@@ -1,7 +1,4 @@
 
-
-
- 
 package com.mycompany.petmanagment;
 
 import com.toedter.calendar.JDateChooser;
