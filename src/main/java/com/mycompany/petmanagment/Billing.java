@@ -372,7 +372,7 @@ public class Billing extends javax.swing.JFrame {
         });
 
         totlbl.setBackground(new java.awt.Color(255, 255, 255));
-        totlbl.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        totlbl.setFont(new java.awt.Font("Century Gothic", 1, 18)); 
         totlbl.setForeground(new java.awt.Color(0, 51, 102));
         totlbl.setText("0.00");
         totlbl.addMouseListener(new java.awt.event.MouseAdapter() {
