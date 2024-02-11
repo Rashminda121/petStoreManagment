@@ -241,7 +241,7 @@ public class Billing extends javax.swing.JFrame {
         qua.setForeground(new java.awt.Color(0, 51, 102));
 
         jLabel22.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel22.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        jLabel22.setFont(new java.awt.Font("Century Gothic", 1, 16)); 
         jLabel22.setForeground(new java.awt.Color(0, 51, 102));
         jLabel22.setText("Quantity");
 
