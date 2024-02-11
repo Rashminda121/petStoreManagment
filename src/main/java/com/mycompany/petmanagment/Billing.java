@@ -228,7 +228,7 @@ public class Billing extends javax.swing.JFrame {
         jLabel20.setText("Customer");
 
         jLabel21.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel21.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        jLabel21.setFont(new java.awt.Font("Century Gothic", 1, 18)); 
         jLabel21.setForeground(new java.awt.Color(0, 51, 102));
         jLabel21.setText("Product List");
 
