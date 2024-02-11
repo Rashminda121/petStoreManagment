@@ -711,7 +711,7 @@ public class Billing extends javax.swing.JFrame {
             e.printStackTrace();
         }
  
-    }//GEN-LAST:event_printbtnActionPerformed
+    }
 
     
     int itemid;
