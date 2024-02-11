@@ -549,7 +549,7 @@ public class Billing extends javax.swing.JFrame {
         });
 
         jLabel4.setBackground(new java.awt.Color(0, 51, 102));
-        jLabel4.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Century Gothic", 1, 18)); 
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Rashminda\\Documents\\NetBeansProjects\\petmanagment\\src\\main\\java\\com\\mycompany\\petmanagment\\user.png")); // NOI18N
         jLabel4.setText(" Users");
