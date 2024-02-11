@@ -330,7 +330,7 @@ public class Billing extends javax.swing.JFrame {
         price.setForeground(new java.awt.Color(0, 51, 102));
 
         billtbl.setBackground(new java.awt.Color(255, 255, 255));
-        billtbl.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        billtbl.setFont(new java.awt.Font("Century Gothic", 1, 14)); 
         billtbl.setForeground(new java.awt.Color(0, 51, 102));
         billtbl.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
