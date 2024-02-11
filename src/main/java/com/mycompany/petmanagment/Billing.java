@@ -352,7 +352,7 @@ public class Billing extends javax.swing.JFrame {
         jLabel27.setText("Customer Bill");
 
         addbtn.setBackground(new java.awt.Color(0, 51, 102));
-        addbtn.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        addbtn.setFont(new java.awt.Font("Century Gothic", 0, 15)); 
         addbtn.setForeground(new java.awt.Color(255, 255, 255));
         addbtn.setText("Add To Bill");
         addbtn.addActionListener(new java.awt.event.ActionListener() {
